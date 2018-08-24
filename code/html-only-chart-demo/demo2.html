@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+		* {
+			font-family: Arial, Helvetica, Sans-Serif;
+			line-height: 1.42;
+		}
+		.bar-chart-1-to-4 {
+			color: #00AEEF;
+		}
+		.bar-chart-1-to-4 * {
+			box-sizing: border-box;
+		}
+		.bar-chart-1-to-4 .bar-wrapper,
+		.bar-chart-1-to-4 .axis-wrapper {
+			position: relative;
+			height: 2em;
+		}
+		.bar-chart-1-to-4 .bar-wrapper .bar-fill {
+			position: absolute;
+			padding-top: 0.25em;
+			border-bottom: 1.5em solid #000;
+		}
+		.bar-chart-1-to-4 .bar-wrapper.bar-col-1 .bar-fill {
+			border-color: #B9F3F3;
+		}
+		.bar-chart-1-to-4 .bar-wrapper.bar-col-2 .bar-fill {
+			border-color: #00AEEF;
+		}
+		.bar-chart-1-to-4 .bar-wrapper.bar-col-3 .bar-fill {
+			border-color: #0074A6;
+		}
+		.bar-chart-1-to-4 .bar-wrapper.bar-col-4 .bar-fill {
+			border-color: #00395D;
+		}
+		.bar-chart-1-to-4 .bar-wrapper:hover .bar-fill {
+			border-color: #ddd;
+		}
+		.bar-chart-1-to-4 .bar-wrapper .bar-label,
+		.bar-chart-1-to-4 .bar-wrapper .bar-value {
+			position: absolute;
+			padding: 0.25em 1em;
+			color: #fff;
+		}
+		.bar-chart-1-to-4 .bar-wrapper .bar-value {
+			text-align: right;
+		}
+		.bar-chart-1-to-4 .bar-wrapper.bar-col-1 .bar-label,
+		.bar-chart-1-to-4 .bar-wrapper.bar-col-1 .bar-value {
+			color: #000;
+		}
+		.bar-chart-1-to-4 .bar-wrapper.bar-col-2 .bar-label,
+		.bar-chart-1-to-4 .bar-wrapper.bar-col-2 .bar-value {
+			color: #fff;
+		}
+		.bar-chart-1-to-4 .bar-wrapper.bar-col-3 .bar-label,
+		.bar-chart-1-to-4 .bar-wrapper.bar-col-3 .bar-value {
+			color: #fff;
+		}
+		.bar-chart-1-to-4 .bar-wrapper.bar-col-4 .bar-label,
+		.bar-chart-1-to-4 .bar-wrapper.bar-col-4 .bar-value {
+			color: #fff;
+		}
+		.bar-chart-1-to-4 .bar-wrapper:hover {
+			background-color: #f9f9f9;
+		}
+		.bar-chart-1-to-4 .bar-wrapper:hover .bar-label,
+		.bar-chart-1-to-4 .bar-wrapper:hover .bar-value {
+			color: #000;
+		}
+		.bar-chart-1-to-4 .bar-wrapper.bar-short .bar-label,
+		.bar-chart-1-to-4 .bar-wrapper.bar-short .bar-value {
+			color: #000;
+		}
+		.bar-chart-1-to-4 .axis-wrapper {
+			height: 2em;
+			border-top: 0.125em dotted #00AEEF;
+			margin-top: 0.25em;
+		}
+		.bar-chart-1-to-4 .axis-wrapper > div {
+			height: 1.5em;
+			position: absolute;
+			padding: 0.25em 0;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<div class="bar-chart-1-to-4">
+	<h2>graph title</h2>
+	<div class="bar-wrapper bar-col-1">
+		<div class="bar-fill" style="width: 20%;"></div>
+		<div class="bar-label">Data 1</div>
+		<div class="bar-value" style="right: 80%;">20%</div>
+	</div>
+	<div class="bar-wrapper bar-col-2">
+		<div class="bar-fill" style="width: 50%;"></div>
+		<div class="bar-label">Data 2</div>
+		<div class="bar-value" style="right: 50%;">50%</div>
+	</div>
+	<div class="bar-wrapper bar-col-3">
+		<div class="bar-fill" style="width: 100%;"></div>
+		<div class="bar-label">Data 3</div>
+		<div class="bar-value" style="right: 0%;">100%</div>
+	</div>
+	<div class="bar-wrapper bar-col-4">
+		<div class="bar-fill" style="width: 73%;"></div>
+		<div class="bar-label">Data 4</div>
+		<div class="bar-value" style="right: 27%;">73%</div>
+	</div>
+	<div class="axis-wrapper">
+		<div style="right: 98%;">1</div>
+		<div style="right: 66%;">2</div>
+		<div style="right: 34%;">3</div>
+		<div style="right: 2%;">4</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+		* {
+			box-sizing: border-box;
+			font-family: Arial, Helvetica, Sans-Serif;
+		}
+		.barc-col-1 {
+			background-color: #B9F3F3;
+		}
+		.barc-col-2 {
+			background-color: #00AEEF;
+		}
+		.barc-col-3 {
+			background-color: #0074A6;
+		}
+		.barc-col-4 {
+			background-color: #00395D;
+		}
+		dl.bar-chart-1-to-4 {
+			float: left;
+			width: 100%;
+			margin: 0;
+			padding: 1em;
+			border: 2px solid #ddd;
+			line-height: 3em;
+			vertical-align: middle;
+		}
+		dl.bar-chart-1-to-4 > dt {
+			float: left;
+			clear: left;
+			margin: 0;
+			padding: 0.25em 1em 0.25em 0.25em;
+			width: 20%;
+			text-align: right;
+		}
+		dl.bar-chart-1-to-4 > dd {
+			width: 80%;
+			float: left;
+			margin: 0;
+			padding: 0.25em 0;
+		}
+		dl.bar-chart-1-to-4 > dd.bar {
+			background: repeating-linear-gradient(
+				to right,
+				#ddd,
+				#ddd 1px,
+				#fff 1px,
+				#fff 5%
+			);
+		}
+		dl.bar-chart-1-to-4 > dd.bar > div {
+			float: left;
+			margin: 0;
+			padding: 0;
+		}
+		dl.bar-chart-1-to-4 > dd.bar > div:hover {
+			background-color: #ccc;
+		}
+		dl.bar-chart-1-to-4 > dt.axis {
+			padding-right: 0;
+		}
+		dl.bar-chart-1-to-4 > dd.axis > div {
+			width: 25%;
+			float: left;
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+<h1>graph title</h1>
+<dl class="bar-chart-1-to-4">
+	<dt>Data 1: 20%</dt>
+	<dd class="bar"><div class="barc-col-1" style="width: 20%;">&nbsp;</div></dd>
+	<dt>Data 2: 50%</dt>
+	<dd class="bar"><div class="barc-col-2" style="width: 50%;">&nbsp;</div></dd>
+	<dt>Data 3: 30%</dt>
+	<dd class="bar"><div class="barc-col-3" style="width: 100%;">&nbsp;</div></dd>
+	<dt>Data 4: 73%</dt>
+	<dd class="bar"><div class="barc-col-4" style="width: 73%;">&nbsp;</div></dd>
+	<dt class="axis">0</dt>
+	<dd class="axis">
+		<div>1</div><div>2</div><div>3</div><div>4</div>
+	</dd>
+</dl>
+</body>
+</html>

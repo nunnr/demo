@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+		* {
+			font-family: Arial, Helvetica, Sans-Serif;
+			line-height: 1.42;
+		}
+		.range-bar-chart * {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		.range-bar-chart .bar-label {
+			width: 20%;
+			float: left;
+			height: 4em;
+			padding: 0.25em 1em 0.25em 0.25em;
+			clear: left;
+		}
+		.range-bar-chart .bar-wrapper {
+			width: 80%;
+			float: left;
+			height: 4em;
+			position: relative;
+		}
+		.range-bar-chart .bar-wrapper .bar-fill {
+			position: absolute;
+			height: 4em;
+		}
+		.range-bar-chart .bar-wrapper:hover * {
+			border-color: #ddd;
+		}
+		.range-bar-chart .sub-label-left {
+			float: left;
+			text-align: left;
+		}
+		.range-bar-chart .sub-label-right {
+			float: right;
+			text-align: right;
+		}
+		.range-bar-chart .sub-fill {
+			margin-top: 1.5em;
+			height: 2.25em;
+		}
+		.range-bar-chart .sub-fill-left,
+		.range-bar-chart .sub-fill-right {
+			height: 2.25em;
+			border: 0.4em solid #00AEEF;
+			border-radius: 0.4em;
+		}
+		.range-bar-chart .sub-fill-left {
+			float: left;
+		}
+		.range-bar-chart .sub-fill-right {
+			float: right;
+		}
+		.range-bar-chart .sub-fill-center {
+			padding-top: 0.625em;
+			border-bottom: 1em solid #00AEEF;
+		}
+		.range-bar-chart .axis-wrapper {
+			width: 80%;
+			float: left;
+			height: 2em;
+			position: relative;
+			border-bottom: 0.125em dotted #00AEEF;
+			margin: 0 0 0.25em 0;
+		}
+		.range-bar-chart .axis-wrapper > div {
+			height: 1.5em;
+			position: absolute;
+			padding: 0.25em 0;
+			color: #00AEEF;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<dl class="range-bar-chart">
+	<dt class="bar-label">&nbsp;</dt>
+	<dd class="axis-wrapper">
+		<div style="right: 98%;">1</div>
+		<div style="right: 66%;">2</div>
+		<div style="right: 34%;">3</div>
+		<div style="right: 2%;">4</div>
+	</dd>
+	<dt class="bar-label">Data 1: 20%</dt>
+	<dd class="bar-wrapper">
+		<div class="bar-fill" style="left: 45%; width: 20%;">
+			<div class="sub-label-left">others</div>
+			<div class="sub-label-right">you</div>
+			<div class="sub-fill">
+				<div class="sub-fill-left"></div>
+				<div class="sub-fill-right"></div>
+				<div class="sub-fill-center"></div>
+			</div>
+		</div>
+	</dd>
+	<dt class="bar-label">Data 2: 50%</dt>
+	<dd class="bar-wrapper">
+		<div class="bar-fill" style="left: 20%; width: 50%;">
+			<div class="sub-label-left">others</div>
+			<div class="sub-label-right">you</div>
+			<div class="sub-fill">
+				<div class="sub-fill-left"></div>
+				<div class="sub-fill-right"></div>
+				<div class="sub-fill-center"></div>
+			</div>
+		</div>
+	</dd>
+	<dt class="bar-label">Data 3: 10%</dt>
+	<dd class="bar-wrapper">
+		<div class="bar-fill" style="left: 78%; width: 10%;">
+			<div class="sub-label-left">others</div>
+			<div class="sub-label-right">you</div>
+			<div class="sub-fill">
+				<div class="sub-fill-left"></div>
+				<div class="sub-fill-right"></div>
+				<div class="sub-fill-center"></div>
+			</div>
+		</div>
+	</dd>
+	<dt class="bar-label">Data 4: 73%</dt>
+	<dd class="bar-wrapper">
+		<div class="bar-fill" style="left: 0%; width: 73%;">
+			<div class="sub-label-left">others</div>
+			<div class="sub-label-right">you</div>
+			<div class="sub-fill">
+				<div class="sub-fill-left"></div>
+				<div class="sub-fill-right"></div>
+				<div class="sub-fill-center"></div>
+			</div>
+		</div>
+	</dd>
+</dl>
+</body>
+</html>
